@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="slider">
+        
+            <input type="radio" name="slider"  checked="checked" class="slider-btn"/>
+           
+            <input type="radio" name="slider"  class="slider-btn"/>
+
+            <input type="radio" name="slider"  class="slider-btn"/>
+            <input type="radio" name="slider"   class="slider-btn"/>
+          
+            <form id="survey-form" action="./sacuvaj_zelju.php" class="form" method="POST">
+              <section class="form-section">
+                <figure class="form-figure">
+                  <img id="santa" src="https://image.freepik.com/free-vector/funny-santa-claus-celebrating-christmas_74855-962.jpg" alt="Santa welcoming">
+                  <img id="rudolph" src="https://www.kerefeke.org.rs/wp-content/uploads/2019/12/irvas-1.jpg" alt="Rudolph welcoming">
+                </figure>
+                <h1 id="title" class="form-caption">Dobrodosli</h1>
+                <p id="description" class="form-text">Hvala sto sa nama dijelite vase zelje!</p>
+              </section>
+              <section class="form-section">
+                <figure class="form-figure" id="final-santa">
+                  <img src="https://raw.githubusercontent.com/MartaFagundez/FreeCodeCamp/master/Survey_Form/santa4.png" alt="Santa reading">
+                </figure>
+                <h2 class="form-caption">Recite Deda Mrazu nesto o sebi</h2>
+                
+                <div class="form-field-group">
+                  <input id="first-name"
+                           class="field-text" 
+                           name="first-name"  
+                           type="text"  
+
+                           placeholder="Koje je tvoje ime?" 
+                           required>
+                  <label for="first-name" id="first-name-label" class="floating-label">Kako se zoves?</label>
+                  <div class="validation-info">*Deda Mraz to zahtjeva</div>
+                </div>
+          
+                <div class="form-field-group">
+                  <input id="last-name" 
+                           class="field-text" 
+                           name="last-name" 
+                           type="text" 
+                           placeholder="Unesi svoje ime" 
+                        
+                           required> 
+                  <label for="last-name" id="last-name-label" class="floating-label">Kako se prezivas?</label>
+                  <div class="validation-info">*Deda Mraz to zahtjeva</div>
+                </div>
+          
+                <div class="form-field-group">
+                    <label class="checkbox" for="was-good">
+                       Potvrdi da li si bio dobar/dobra ove godine:
+                        <input class="field-checkbox" type="checkbox" name="was-good" id="was-good" />
+
+                      </label>
+                    </div>
+                </section>
+              
+          
+              <section class="form-section">
+                <figure class="form-figure">
+                  <img src="https://raw.githubusercontent.com/MartaFagundez/FreeCodeCamp/master/Survey_Form/santa3.png" alt="Santa with gifts">
+                </figure>
+                <h2 class="form-caption">Gdje da dodjem?</h2>
+                <select id="dropdown" class="field-select" name="city">
+                      <option value="bd">Budva</option>
+                      <option value="br">Bar</option>
+                      <option value="pg">Podgorica</option>
+                      <option value="nk">Niksic</option>
+                  </select>
+              </section>
+          
+              <section class="form-section">
+                <figure class="form-figure">
+                  <img src="https://raw.githubusercontent.com/MartaFagundez/FreeCodeCamp/master/Survey_Form/santa7i.png" alt="Santa decorating a pine tree">
+                </figure>
+                <h2 class="form-caption">Sta bi ste zeljeli od Deda Mraza? </h2>
+                <div class="form-field-group">
+                  <textarea  id="wish-text"
+                  name="wish-text"
+                           class="field-text"   
+                           placeholder="For me, Christmas is ..." 
+                           rows="6"></textarea>
+                  <label for="wish-text" class="floating-label">For me, Christmas is ...</label>
+                </div>
+                <input type="submit" id="submit"  class="submit-button" value="Posalji">Posalji zelju!</button>
+              </section>
+              
+  
+        </form>
+    </div>
+    
+    
+    
+</body>
+</html>
